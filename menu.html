@@ -93,349 +93,353 @@
       .tab-content {
         margin-top: 2rem;
       }
-
     </style>
   </head>
   <body>
     <header>
-    <div class="header-banner text-center">
+      <div class="header-banner text-center">
         <h1 class="mb-3">The Juice Laundry</h1>
 
-    <nav>
-      <ul class="nav justify-content-center">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li class="nav-item dropdown">
-          <a
-            href="#"
-            id="locationsDropdown"
-            class="dropdown-toggle"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Locations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="locationsDropdown">
-            <li>
-              <a class="dropdown-item">Ballston Quarter</a>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                id="locationsDropdown"
+                class="dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Locations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="locationsDropdown">
+                <li>
+                  <a class="dropdown-item">Ballston Quarter</a>
+                </li>
+                <li>
+                  <a class="dropdown-item">Clarendon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item">Georgetown</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a class="dropdown-item">Clarendon</a>
-            </li>
-            <li>
-              <a class="dropdown-item">Georgetown</a>
-            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="button-bar sticky-top" style="top: 150px; z-index: 1100">
+      <ul
+        class="nav nav-pills justify-content-center"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="juices-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#juices"
+            type="button"
+            role="tab"
+            aria-controls="juices"
+            aria-selected="true"
+          >
+            Juices
+          </button>
         </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="smoothies-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#smoothies"
+            type="button"
+            role="tab"
+            aria-controls="smoothies"
+            aria-selected="false"
+          >
+            Smoothies
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="snacks-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#snacks"
+            type="button"
+            role="tab"
+            aria-controls="snacks"
+            aria-selected="false"
+          >
+            Snacks
+          </button>
+        </li>
       </ul>
-    </nav>
     </div>
-</header>
-
-<h2 class="text-center">Menu</h2>
-
-    <ul class="nav nav-pills sticky-top px-3 py-2" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="juices-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#juices"
-          type="button"
-          role="tab"
-          aria-controls="juices"
-          aria-selected="true"
-        >
-          Juices
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="smoothies-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#smoothies"
-          type="button"
-          role="tab"
-          aria-controls="smoothies"
-          aria-selected="false"
-        >
-        Smoothies
-        </button>
-      </li>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="snacks-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#snacks"
-          type="button"
-          role="tab"
-          aria-controls="snacks"
-          aria-selected="false"
-        >
-        Snacks
-        </button>
-      </li>
-    </ul>
 
     <div class="tab-content container" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="juices"
-          role="tabpanel"
-          aria-labelledby="juices-tab"
-        >
-          <div class="menu-columns">
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img src="images/juices/374-spicy-green.jpg" class="juice-img" />
-                  <strong>SPICY GREEN</strong>
-                  <ul>
-                    <li>
-                      Ingredients: spinach* kale* cucumber* celery* sprouts* parsley*
-                      cilantro* jalapeño* lime* pink salt
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/375-clean-green.jpg"
-                    class="juice-img"
-                  />
-                  <strong>CLEAN GREEN</strong>
-                  <ul>
-                    <li>
-                      Ingredients: kale* spinach* cucumber* celery* apple* parsley*
-                      ginger* lemon*
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/376-gentle-green.jpg"
-                    class="juice-img"
-                  />
-                  <strong>GENTLE GREEN</strong>
-                  <ul>
-                    <li>Ingredients: kale* spinach* cucumber* grapefruit* apple*</li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/377-citrus-fire.jpg"
-                    class="juice-img"
-                  />
-                  <strong>CITRUS FIRE</strong>
-                  <ul>
-                    <li>Ingredients: grapefruit* orange* lemon* ginger* cayenne*</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img
-                    src="images/juices/386-rinse-rebeet.jpg"
-                    class="juice-img"
-                  />
-                  <strong>RINSE & RE-BEET</strong>
-                  <ul>
-                    <li>Ingredients: beet* carrot* cucumber* celery* lemon*</li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/387-rinse-refresh.jpg"
-                    class="juice-img"
-                  />
-                  <strong>RINSE & REFRESH</strong>
-                  <ul>
-                    <li>Ingredients: cucumber* grapefruit* pineapple*</li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/388-rinse-recharge.jpg"
-                    class="juice-img"
-                  />
-                  <strong>RINSE & RECHARGE</strong>
-                  <ul>
-                    <li>
-                      Ingredients: lemon* pineapple* maple syrup* cayenne* filtered
-                      water
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/juices/389-red-loaded.jpg"
-                    class="juice-img"
-                  />
-                  <strong>RED LOADED</strong>
-                  <ul>
-                    <li>Ingredients: carrot* celery* red pepper* cucumber* lemon*</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="smoothies"
-          role="tabpanel"
-          aria-labelledby="smoothies-tab"
-        >
-          <div class="menu-columns">
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img
-                    src="images/smoothies-bowls/414-coco-verde.jpg"
-                    class="juice-img"
-                  />
-                  <strong>COCO VERDE</strong>
-                  <ul>
-                    <li>
-                      kale* spinach* mango* coconut oil* banana* dates* coconut water*
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/smoothies-bowls/415-cbj.jpg"
-                    class="juice-img"
-                  />
-                  <strong>BRADLEY'S CB&J</strong>
-                  <ul>
-                    <li>
-                      cashew butter* strawberries* banana* dates* house cashew milk*
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/smoothies-bowls/416-super.jpg"
-                    class="juice-img"
-                  />
-                  <strong>SUPER</strong>
-                  <ul>
-                    <li>
-                      blueberries* goji berries* banana* dates* house almond milk*
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img
-                    src="images/smoothies-bowls/417-blaze.jpg"
-                    class="juice-img"
-                  />
-                  <strong>BLAZE</strong>
-                  <ul>
-                    <li>
-                      ginger* cayenne* mango* strawberries* banana* dates* house cashew
-                      milk*
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/smoothies-bowls/465-waterboy.jpg.jpg"
-                    class="juice-img"
-                  />
-                  <strong>THE WATERBOY</strong>
-                  <ul>
-                    <li>banana* mango* blue majik* coconut water*</li>
-                  </ul>
-                </li>
-                <li>
-                    <img
-                      src="images/smoothies-bowls/451-blended-brew.jpg"
-                      class="juice-img"
-                    />
-                    <strong>BLENDED BREW</strong>
-                    <ul>
-                      <li>cashew butter* oats* banana* dates* cold brew coffee* (cacao* optional)</li>
-                    </ul>
+      <div
+        class="tab-pane fade show active"
+        id="juices"
+        role="tabpanel"
+        aria-labelledby="juices-tab"
+      >
+        <div class="menu-columns">
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img
+                  src="images/juices/374-spicy-green.jpg"
+                  class="juice-img"
+                />
+                <strong>SPICY GREEN</strong>
+                <ul>
+                  <li>
+                    Ingredients: spinach* kale* cucumber* celery* sprouts*
+                    parsley* cilantro* jalapeño* lime* pink salt
                   </li>
-              </ol>
-            </div>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/juices/375-clean-green.jpg"
+                  class="juice-img"
+                />
+                <strong>CLEAN GREEN</strong>
+                <ul>
+                  <li>
+                    Ingredients: kale* spinach* cucumber* celery* apple*
+                    parsley* ginger* lemon*
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/juices/376-gentle-green.jpg"
+                  class="juice-img"
+                />
+                <strong>GENTLE GREEN</strong>
+                <ul>
+                  <li>
+                    Ingredients: kale* spinach* cucumber* grapefruit* apple*
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/juices/377-citrus-fire.jpg"
+                  class="juice-img"
+                />
+                <strong>CITRUS FIRE</strong>
+                <ul>
+                  <li>
+                    Ingredients: grapefruit* orange* lemon* ginger* cayenne*
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img
+                  src="images/juices/386-rinse-rebeet.jpg"
+                  class="juice-img"
+                />
+                <strong>RINSE & RE-BEET</strong>
+                <ul>
+                  <li>Ingredients: beet* carrot* cucumber* celery* lemon*</li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/juices/387-rinse-refresh.jpg"
+                  class="juice-img"
+                />
+                <strong>RINSE & REFRESH</strong>
+                <ul>
+                  <li>Ingredients: cucumber* grapefruit* pineapple*</li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/juices/388-rinse-recharge.jpg"
+                  class="juice-img"
+                />
+                <strong>RINSE & RECHARGE</strong>
+                <ul>
+                  <li>
+                    Ingredients: lemon* pineapple* maple syrup* cayenne*
+                    filtered water
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img src="images/juices/389-red-loaded.jpg" class="juice-img" />
+                <strong>RED LOADED</strong>
+                <ul>
+                  <li>
+                    Ingredients: carrot* celery* red pepper* cucumber* lemon*
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
-  
-        <div
-          class="tab-pane fade"
-          id="snacks"
-          role="tabpanel"
-          aria-labelledby="snacks-tab"
-        >
-          <div class="menu-columns">
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img
-                    src="images/snacks/475-breakfast-bowl.jpg"
-                    class="juice-img"
-                  />
-                  <strong>BREAKFAST BOWL</strong>
-                  <ul>
-                    <li>
-                      gluten-free oats (made w/ house cashew milk) and/or chia pudding (made with oat milk) with your choice of 3 toppings
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img
-                    src="images/snacks/476-chili-15546949999892.jpg"
-                    class="juice-img"
-                  />
-                  <strong>CHILI w/ CASHEW CREAM</strong>
-                  <ul>
-                    <li>
-                      our delicious house chili with your choice of regular or jalapeno-lime cashew cream
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col">
-              <ol class="list-unstyled">
-                <li>
-                  <img
-                    src="images/snacks/489-salad.jpg"
-                    class="juice-img"
-                  />
-                  <strong>KALE CAESAR</strong>
-                  <ul>
-                    <li>kale and cabbage blend with vegan dressing and parm</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="smoothies"
+        role="tabpanel"
+        aria-labelledby="smoothies-tab"
+      >
+        <div class="menu-columns">
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img
+                  src="images/smoothies-bowls/414-coco-verde.jpg"
+                  class="juice-img"
+                />
+                <strong>COCO VERDE</strong>
+                <ul>
+                  <li>
+                    kale* spinach* mango* coconut oil* banana* dates* coconut
+                    water*
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/smoothies-bowls/415-cbj.jpg"
+                  class="juice-img"
+                />
+                <strong>BRADLEY'S CB&J</strong>
+                <ul>
+                  <li>
+                    cashew butter* strawberries* banana* dates* house cashew
+                    milk*
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/smoothies-bowls/416-super.jpg"
+                  class="juice-img"
+                />
+                <strong>SUPER</strong>
+                <ul>
+                  <li>
+                    blueberries* goji berries* banana* dates* house almond milk*
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img
+                  src="images/smoothies-bowls/417-blaze.jpg"
+                  class="juice-img"
+                />
+                <strong>BLAZE</strong>
+                <ul>
+                  <li>
+                    ginger* cayenne* mango* strawberries* banana* dates* house
+                    cashew milk*
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/smoothies-bowls/465-waterboy.jpg.jpg"
+                  class="juice-img"
+                />
+                <strong>THE WATERBOY</strong>
+                <ul>
+                  <li>banana* mango* blue majik* coconut water*</li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/smoothies-bowls/451-blended-brew.jpg"
+                  class="juice-img"
+                />
+                <strong>BLENDED BREW</strong>
+                <ul>
+                  <li>
+                    cashew butter* oats* banana* dates* cold brew coffee*
+                    (cacao* optional)
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
 
-
-
-
-
-    <div class="page">
-      
-               
-      
+      <div
+        class="tab-pane fade"
+        id="snacks"
+        role="tabpanel"
+        aria-labelledby="snacks-tab"
+      >
+        <div class="menu-columns">
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img
+                  src="images/snacks/475-breakfast-bowl.jpg"
+                  class="juice-img"
+                />
+                <strong>BREAKFAST BOWL</strong>
+                <ul>
+                  <li>
+                    gluten-free oats (made w/ house cashew milk) and/or chia
+                    pudding (made with oat milk) with your choice of 3 toppings
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img
+                  src="images/snacks/476-chili-15546949999892.jpg"
+                  class="juice-img"
+                />
+                <strong>CHILI w/ CASHEW CREAM</strong>
+                <ul>
+                  <li>
+                    our delicious house chili with your choice of regular or
+                    jalapeno-lime cashew cream
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol class="list-unstyled">
+              <li>
+                <img src="images/snacks/489-salad.jpg" class="juice-img" />
+                <strong>KALE CAESAR</strong>
+                <ul>
+                  <li>kale and cabbage blend with vegan dressing and parm</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="page"></div>
 
     <footer>
       <p>
@@ -447,6 +451,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>

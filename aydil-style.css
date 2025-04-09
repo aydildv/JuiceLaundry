@@ -2,7 +2,7 @@ h1 {
   color: rgb(255, 255, 255);
 }
 h2 {
-  color: #d735ec (255, 255, 255);
+  color: #d735ec;
   text-align: center;
 }
 .juice-img {
@@ -19,15 +19,12 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  margin-bottom: 2rem;
   height: 150px;
 }
 .nav-pills {
-  position: sticky;
-  top: 150px;
-  z-index: 100;
-  background-color: #fff;
-  padding-top: 1rem;
+  padding-top: 0;
+  background-color: transparent;
+  position: static;
 }
 h2 {
   margin-bottom: 20px;
@@ -45,4 +42,16 @@ button {
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.button-bar {
+  background-color: #e9d7fd;
+  padding: 1rem 0;
+  width: 100%;
+  position: sticky;
+  top: 150px;
+  z-index: 1100;
+}
+.tab-background {
+  background-color: #f3e8ff;
+  padding: 1rem 0;
 }

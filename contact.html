@@ -63,6 +63,22 @@
         padding-top: 1rem;
         border-top: 1px solid #ccc;
       }
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        padding: 0 2rem;
+        background-color: #f9f9f9;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        flex: 1;
+      }
     </style>
   </head>
   <body>
@@ -104,57 +120,59 @@
       </div>
     </header>
 
-    <section class="container my-5">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="p-4 border rounded shadow-sm h-100 bg-white">
-            <h4 style="color: #1e2a47">Contact us</h4>
-            <p>Charlottesville, VA, USA</p>
-            <p>(434) 234-3044</p>
-            <p>info@juicelaundry.com</p>
+    <main>
+      <section class="container my-5">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h4 style="color: #d735ec">Contact us</h4>
+              <p>Charlottesville, VA, USA</p>
+              <p>(434) 234-3044</p>
+              <p>info@juicelaundry.com</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="p-4 border rounded shadow-sm h-100 bg-white">
-            <h4 style="color: #1e2a47">Business Hours</h4>
-            <p>Monday - Firday</p>
-            <p>9AM - 3PM</p>
-            <p>Saturday & Sunday</p>
-            <p>10AM - 2PM</p>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h4 style="color: #d735ec">Business Hours</h4>
+              <p>Monday - Firday</p>
+              <p>9AM - 3PM</p>
+              <p>Saturday & Sunday</p>
+              <p>10AM - 2PM</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="p-4 border rounded shadow-sm h-100 bg-white">
-            <h4 style="color: #1e2a47">Follow us</h4>
-            <p></p>
-            <p></p>
-            <div class="mt-2">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="text-decoration-none text-primary mx-2"
-              >
-                <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="text-decoration-none text-danger mx-2"
-              >
-                <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="https://x.com/"
-                target="_blank"
-                class="text-decoration-none text-info mx-2"
-              >
-                <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
-              </a>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h4 style="color: #d735ec">Follow us</h4>
+              <p></p>
+              <p></p>
+              <div class="mt-2">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="text-decoration-none text-primary mx-2"
+                >
+                  <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="text-decoration-none text-danger mx-2"
+                >
+                  <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+                </a>
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  class="text-decoration-none text-info mx-2"
+                >
+                  <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <link
       rel="stylesheet"
